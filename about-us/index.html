@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Web Development</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom background gradient */
+    .bg-gradient {
+      background: linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%);
+    }
+
+    /* Simple fade animation */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-up {
+      animation: fadeInUp 1s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-gradient font-sans">
+
+  <!-- 🌐 About Web Development Section -->
+  <section class="py-16 px-6 md:px-12 text-center">
+    <h1 class="text-4xl font-extrabold text-green-700 mb-6 fade-up">
+      About Web Development
+    </h1>
+
+    <p class="text-gray-700 text-lg leading-relaxed max-w-3xl mx-auto fade-up">
+      Web development is the process of creating and maintaining websites. It includes everything from designing the layout to coding functionality. 
+      It’s a blend of creativity, logic, and problem-solving — where front-end and back-end technologies work together to bring ideas to life.
+    </p>
+
+    <!-- Info Boxes -->
+    <div class="grid md:grid-cols-3 gap-8 mt-12 max-w-6xl mx-auto">
+
+      <!-- Front-End Box -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 hover:scale-105 transform transition fade-up">
+        <img src="img/WhatsApp Image 2025-10-28 at 09.39.16_d1ce77fd.jpg" alt="Frontend" class="w-16 mx-auto mb-4">
+        <h3 class="text-xl font-bold text-green-700 mb-2">Front-End Development</h3>
+        <p class="text-gray-600">
+          Front-end developers use HTML, CSS, TailwindCSS, and JavaScript to design and build interactive, responsive web pages.
+        </p>
+      </div>
+
+      <!-- Back-End Box -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 hover:scale-105 transform transition fade-up">
+        <img src="img/WhatsApp Image 2025-10-28 at 09.39.16_d1ce77fd.jpg" alt="Backend" class="w-16 mx-auto mb-4">
+        <h3 class="text-xl font-bold text-green-700 mb-2">Back-End Development</h3>
+        <p class="text-gray-600">
+          Back-end focuses on databases, logic, and server-side operations using technologies like Node.js, Express, and MongoDB.
+        </p>
+      </div>
+
+      <!-- Full-Stack Box -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 hover:scale-105 transform transition fade-up">
+        <img src="img/WhatsApp Image 2025-10-28 at 09.39.16_d1ce77fd.jpg" alt="Full Stack" class="w-16 mx-auto mb-4">
+        <h3 class="text-xl font-bold text-green-700 mb-2">Full-Stack Developer</h3>
+        <p class="text-gray-600">
+          A full-stack developer handles both front-end and back-end — building complete web applications from start to finish.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
