@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Web Development</title>
+  <style>
+    /* Reset and Base Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Custom Background Gradient (Greenish Theme) */
+    .bg-gradient {
+      background: linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%);
+      min-height: 100vh;
+      color: #333;
+    }
+
+    /* Animation */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-up {
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    /* Section Styling */
+    .section-padding {
+      padding: 4rem 1.5rem; /* Equivalent to py-16 px-6 */
+    }
+    
+    .container {
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Header */
+    .header-text {
+      max-width: 40rem; /* max-w-xl */
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .header-text h1 {
+      font-size: 2.25rem; /* text-4xl */
+      font-weight: 800; /* font-extrabold */
+      color: #047857; /* text-green-700 */
+      margin-bottom: 1.5rem; /* mb-6 */
+    }
+
+    .header-text p {
+      font-size: 1.125rem; /* text-lg */
+      margin-bottom: 2.5rem; /* mb-10 */
+    }
+
+    /* Form Container */
+    .form-card {
+      max-width: 36rem; /* max-w-2xl */
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 1rem; /* rounded-2xl */
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+      padding: 3rem; /* p-12 */
+    }
+
+    /* Form Elements */
+    .form-group {
+      margin-bottom: 1.5rem; /* space-y-6 */
+    }
+    
+    .form-group label {
+      display: block;
+      font-size: 0.875rem; /* text-sm */
+      font-weight: 500; /* font-medium */
+      color: #374151; /* text-gray-700 */
+      margin-bottom: 0.25rem; /* mb-1 */
+    }
+
+    .form-group input,
+    .form-group textarea {
+      display: block;
+      width: 100%;
+      padding: 0.75rem 1rem; /* px-4 py-3 */
+      border: 1px solid #d1d5db; /* border border-gray-300 */
+      border-radius: 0.5rem; /* rounded-lg */
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      box-sizing: border-box;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #10b981; /* focus:border-green-500 */
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.5); /* focus:ring-green-500 */
+    }
+
+    /* Submit Button */
+    .submit-btn {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 0.75rem 1rem; /* py-3 px-4 */
+      border: none;
+      border-radius: 0.5rem; /* rounded-lg */
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+      font-size: 1.125rem; /* text-lg */
+      font-weight: 500; /* font-medium */
+      color: #fff;
+      background-color: #059669; /* bg-green-600 */
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #047857; /* hover:bg-green-700 */
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .section-padding {
+        padding: 3rem 1rem;
+      }
+      .form-card {
+        padding: 1.5rem;
+      }
+      .header-text h1 {
+        font-size: 1.875rem; /* text-3xl */
+      }
+    }
+  </style>
+</head>
+<body class="bg-gradient">
+
+  <!-- 📧 Contact Us Section -->
+  <section class="section-padding">
+    <div class="header-text fade-up">
+      <h1>Contact Our Team</h1>
+      <p>
+        Have a question or want to start a project? Send us a message! We typically respond within 24 hours.
+      </p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="form-card fade-up">
+      <form action="#" method="POST" class="space-y-6">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>

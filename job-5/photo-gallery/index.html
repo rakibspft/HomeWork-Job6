@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | Cumilla Polytechnic Institute</title>
+    <link rel="icon" type="image/x-icon" href="src/icon.jpg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Using inline styles to replicate the look of style.css -->
+    <style>
+        .header-bg {
+            background-color: #004d40; /* Dark green/teal for header based on common CPI color schemes */
+        }
+        .footer-bg {
+            background-color: #343a40; /* Dark grey to match the dark navbar/footer look */
+        }
+        /* Gallery Specific Styles */
+        .gallery-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            border-radius: 0.5rem;
+        }
+        .gallery-img:hover {
+            transform: scale(1.03);
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.75);
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            color: #fff;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-right: 0.75rem;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #17a2b8; /* Info color for hover */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section (Matching index.html) -->
+    <header class="header-bg py-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-2 col-4">
+                    <img src="./img/icon.jpg" class="img-fluid rounded-circle"
+                        alt="Cumilla Polytechnic Institute Logo">
+                </div>
+                <div class="col-md-10 col-8">
+                    <h3 class="text-white mb-0">Cumilla Polytechnic Institute</h3>
+                    <p class="text-white mb-0">Cumilla,Bangladesh</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about-us/index.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact-us/index.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="gallery.html">Photo Gallery</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 📸 Photo Gallery Section -->
+    <main class="container my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-success">Our Campus Memories</h2>
+            <p class="lead text-muted">A collection of beautiful moments, events, and campus life.</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+            
+            <!-- Gallery Item 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/img-1.jpg" class="gallery-img card-img-top" alt="Campus Entrance">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Main Gate View</h5>
+                        <p class="card-text text-muted">A beautiful shot of the institute's main entrance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/img-2.jpg" class="gallery-img card-img-top" alt="Students Activity">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Annual Sports Day</h5>
+                        <p class="card-text text-muted">Students participating enthusiastically in the annual event.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/img-3.jpg" class="gallery-img card-img-top" alt="Computer Lab">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Modern Computer Lab</h5>
+                        <p class="card-text text-muted">Hands-on learning environment for IT students.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/img-4.webp" class="gallery-img card-img-top" alt="Workshop Session">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Technical Workshop</h5>
+                        <p class="card-text text-muted">Practical session with industry experts.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gallery Item 5 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/img-5.webp" class="gallery-img card-img-top" alt="Library Reading">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Peaceful Library</h5>
+                        <p class="card-text text-muted">Students utilizing the institute's library resources.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gallery Item 6 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/img-6.avif" class="gallery-img card-img-top" alt="Graduation Day">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Graduation Ceremony</h5>
+                        <p class="card-text text-muted">Celebrating the achievements of our passing out batch.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    
+    <!-- Footer Section (Matching index.html) -->
+    <footer class="footer-bg text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <p>&copy; 2025 <a href="#" target="_blank" class="text-white text-decoration-none">Rakib</a>. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-1"><a href="https://cpihtc.vercel.app/">Home</a></li>
+                        <li class="mb-1"><a href="https://cpihtc.vercel.app/forum">Club forum</a></li>
+                        <li class="mb-1"><a href="https://cpihtc.vercel.app/join-us">Join Us</a></li>
+                        <li><a href="gallery.html">Photo Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <h5>Contact Information</h5>
+                    <p class="mb-1">Kotbari, Cumilla, Bangladesh</p>
+                    <p class="mb-1">Phone: +880 1245799</p>
+                    <p>Email: info.cpihtc@gmail.com</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/cumillapoly.gov.bd/" target="_blank"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="https://www.linkedin.com/school/cumillapolytechnicinstitute/" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

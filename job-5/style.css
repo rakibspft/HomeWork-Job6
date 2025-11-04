@@ -1,0 +1,92 @@
+            .header-bg {
+                background-color: #1a237e;
+            }
+
+            .navbar-brand img {
+                max-height: 60px;
+            }
+
+
+            .carousel-item {
+
+                aspect-ratio: 16/9;
+                background-color: #000;
+            }
+
+            .carousel-img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                background-color: #000;
+            }
+
+            .sidebar {
+                background-color: #f8f9fa;
+                border-radius: 5px;
+                padding: 15px;
+                margin-bottom: 20px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .sidebar h4 {
+                padding-bottom: 10px;
+                margin-bottom: 15px;
+                color: #1a237e;
+            }
+
+            .footer-bg {
+                background-color: #343a40;
+            }
+
+            .footer-links a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            .footer-links a:hover {
+                text-decoration: underline;
+            }
+
+            .social-icons a {
+                color: #fff;
+                font-size: 1.5rem;
+                margin-right: 15px;
+            }
+
+            .main-content {
+                line-height: 1.6;
+            }
+
+            @media (max-width: 768px) {
+
+                .sidebar img {
+                    width: 70% !important;
+                }
+            }
+
+            .carousel-title {
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.4); /* optional dark overlay */
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+.carousel-img {
+    object-fit: cover;
+}
+
+.notice-section {
+    background-color: #5a7485;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.exam-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.exam-section {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
